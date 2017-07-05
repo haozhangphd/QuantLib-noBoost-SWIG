@@ -1,0 +1,1 @@
+This project is a modification of QuantLib-SWIG, to make the later work with [QuantLib-noBoost](https://github.com/haozhangphd/QuantLib-noBoost). Only binding for Python is provided, however bindings for other languages should also work with minimum modifications.

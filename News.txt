@@ -1,0 +1,54 @@
+
+Changes for QuantLib-SWIG 1.9
+=============================
+
+The most notable changes are included below.
+A detailed list of changes is available in ChangeLog.txt and at
+<https://github.com/lballabio/QuantLib-SWIG/milestone/2?closed=1>.
+
+- dropped support for Visual C++ 8 (2005), which as of April 2016 is
+  unsupported by Microsoft.
+
+- removed harmful redefinition of `SWIGSTDCALL` preventing debugging
+  of C# module (thanks to Fabrice Lecuyer to the heads-up).
+
+- if present in the environment, `LDFLAGS` is now passed to the
+  linker when building the Python wrappers (thanks to Gouthaman
+  Balaraman).
+
+- if present in the environment, `CXXFLAGS` and `LDFLAGS` are now
+  passed to the linker when building the Java wrappers (thanks to
+  Martin Ross).
+
+- added a few inspectors to the `CapFloor` class (thanks to Gouthaman
+  Balaraman).
+
+- exported the `ASX`, `Futures` and `Pillar` structs, used in a few
+  newly-exported rate-helper constructors (thanks to Fabrice Lecuyer).
+
+- allow the use of normal volatilities for cap, floors and swaptions
+  (thanks to Gouthaman Balaraman, Peter Caspers and Wojciech
+  Slusarski).
+
+- exported the `LocalVolSurface` class (thanks to Gouthaman Balaraman).
+
+- exported the `AnalyticPTDHestonEngine` class (thanks to Gouthaman
+  Balaraman).
+
+- exported the `BlackCallableFixedRateBondEngine` class (thanks to
+  Gouthaman Balaraman).
+
+- exported monotonic-cubic zero curve (thanks to Andres Hernandez).
+
+- exported `ShortRateModel` inspectors (thanks to Andres Hernandez).
+
+- added overloaded constructor for `FixedRateBond` taking a vector of
+  `InterestRate` instances (thanks to Gouthaman Balaraman).
+  Unfortunately, this prevents kwargs support in Python.
+
+- swap indexes can now be built with an exogenous discount curve
+  (thanks to Peter Caspers).
+
+- exported BBSW, BKBM, NZOCR and Aonia indexes (thanks to Fabrice Lecuyer).
+
+

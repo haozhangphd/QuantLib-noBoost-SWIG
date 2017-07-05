@@ -1,0 +1,58 @@
+# Compilation artifacts
+configure
+aclocal.m4
+autom4te.cache
+config.log
+config.status
+config/
+Python/QuantLib/quantlib_wrap.cpp
+
+# Build outputs
+**/x64/Debug
+**/x64/Release
+**/Debug
+**/Release
+**/bin/*.xml
+**/bin/*.manifest
+
+# CLion
+.idea
+cmake-build-debug
+cmake-build-release
+
+# Artifacts created in multiple directories
+Makefile
+Makefile.in
+testCaseCollection.xml
+.deps
+.libs
+*.la
+*.lo
+*.o
+*.so
+.build-stamp
+*.pyc
+*.exe
+*.dll
+*.exp
+*.lib
+*.pdb
+*.ilk
+*.class
+*~
+*.ncb
+*.suo
+*.vcproj.*.user
+*.vcxproj.user
+*.VC.db
+*.VC.opendb
+*.log
+*.sdf
+*.opensdf
+*.pch
+*.idb
+*.ipch
+
+# Outputs
+Python/QuantLib/QuantLib.py
+Python/build
